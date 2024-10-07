@@ -8,7 +8,7 @@ public class ContaTerminal {
 	String agencia;
 	String nomecliente;
 	double saldo;
-	try{
+	
 	System.out.println("olá, seja bem vindo");
 	Scanner scan = new Scanner(System.in);
 	System.out.print("insira seu nome: ");
@@ -20,10 +20,7 @@ public class ContaTerminal {
 	System.out.print("qual o valor do primeiro deposito R$: ");
 	saldo = scan.nextDouble();
 	
-	System.out.println("Muito obrigado " + nomecliente + ", sua conta é " + numero +" e agencia " + agencia+ ", seu saldo de:a "+ saldo +" ja está disponivel para saque");
- }catch(java.util.InputMismatchException e) {
-	 System.out.println("Digite os dados corretamente!");
- }
+	System.out.println("Muito obrigado " + nomecliente + ", sua conta é " + numero +" e agencia " + agencia+ ", seu saldo de: "+ saldo +" ja está disponivel para saque");
 }
 
 }
